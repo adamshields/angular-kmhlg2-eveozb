@@ -1,0 +1,18 @@
+<ejs-dialog #Dialog [buttons]='dlgButtons' header="Edit Data" [showCloseIcon]='true' [target]='target' [visible]='false' [isModal]='true'>
+	<ng-template #content>
+		<table>
+			<tr>
+				<td>Id</td>
+				<td>
+					<ejs-textbox placeholder="Listbox Id" [(ngModel)]='value1'></ejs-textbox>
+				</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>
+					<ejs-textbox placeholder="Listbox Name" [(ngModel)]='value2'></ejs-textbox>
+				</td>
+			</tr>
+		</table>
+	</ng-template>
+</ejs-dialog>

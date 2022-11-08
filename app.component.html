@@ -1,0 +1,14 @@
+<div class="control-section">
+  <span>If</span>
+	<ejs-dropdownlist [dataSource]='data' [fields]='fields' (select)='onSelect($event)'></ejs-dropdownlist>
+  <span>Is selected then</span>
+	<ejs-dropdownlist [dataSource]='optionData' [value]='actionType'></ejs-dropdownlist>
+</div>
+<form-dialog (sendValue)='setAction($event)'></form-dialog>
+
+<style>
+	.control-section {
+		height: 100%;
+		min-height: 450px;
+	}
+</style>
